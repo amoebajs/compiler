@@ -1,0 +1,35 @@
+{
+  "name": "@amoebajs/compiler",
+  "version": "0.0.1",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": "https://github.com/amoebajs/compiler.git",
+  "contributors": [
+    "bigmogician <bigmogician@outlook.com>"
+  ],
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "build": "tsc",
+    "pub": "yarn build && node scripts/stable.publish.js",
+    "rc": "yarn build && node scripts/rc.publish.js"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@bigmogician/publisher": "^1.0.12",
+    "@types/node": "^12.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-jsx-control-statements": "^2.2.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tsconfig-paths": "^3.9.0"
+  }
+}
