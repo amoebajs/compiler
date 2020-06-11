@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ReactComponent } from "@amoebajs/builder";
-import { Group, Component, Input, Extends, Method } from "@amoebajs/core";
+import { Group, Component, Input, Extends } from "@amoebajs/core";
 
 /**
  * ## Generator
@@ -58,12 +58,6 @@ export function Generator() {
             {[]}
           </Input>
         </Group>
-        <Method name="onInit" override="super">
-          {function (this: any) {
-            this.setTagName("div");
-            this.addAttributesWithMap({ style: this.resolveRootElementStyle() });
-          }}
-        </Method>
       </Extends>
     </Component>
   );

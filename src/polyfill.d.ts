@@ -34,14 +34,19 @@ export interface IExtendsType<K> {
   children: any;
 }
 
-export interface IMethodType {
-  name: string;
-  override: "super" | true | false;
-  children: any;
+// export interface IMethodType {
+//   name: string;
+//   override: "super" | true | false;
+//   children: any;
+// }
+
+export interface IOverrideType {
+  class: any;
 }
 
 export declare function Component(props: Partial<IComponentType>): React.ReactElement;
 export declare function Group(props: Partial<IGroupType>): React.ReactElement;
 export declare function Input(props: Partial<IInputType>): React.ReactElement;
 export declare function Extends(props: Partial<IExtendsType<K>>): React.ReactElement;
-export declare function Method(props: Partial<IMethodType>): React.ReactElement;
+// export declare function Method(props: Partial<IMethodType>): React.ReactElement;
+export declare function Override(props: Partial<IOverrideType>): React.ReactElement;
